@@ -4,8 +4,17 @@
 # -split.py
 # -data
 # --images
+# ---train
+# ---test
+# ---val
 # --annotations
+# ---train
+# ---test
+# ---val
 # -images(after running parse.py)
+
+# after running this, run the following command
+# cp -r data/annotations data/labels
 
 import random
 import shutil

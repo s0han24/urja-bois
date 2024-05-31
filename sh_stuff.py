@@ -22,7 +22,5 @@ def connect(object_boxes, brand_boxes, threshold):
                 best_brand_box = brand_box 
                 best_sh_score = sh_score(brand_box, object_box)
         if best_sh_score >= threshold:
-            best_boxes.append(best_brand_box)
-        else:
-            best_boxes.append(None)
+            best_boxes.append((object_box, best_brand_box))
     return best_boxes

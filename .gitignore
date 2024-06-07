@@ -8,3 +8,5 @@ ipython_config.py
 *.py[cod]
 cache/
 output/
+
+.vscode/
